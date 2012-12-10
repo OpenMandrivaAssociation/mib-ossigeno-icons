@@ -3,7 +3,7 @@
 
 Name:		mib-ossigeno-icons
 Version:	4.3.0
-Release:	%mkrel 69.3
+Release:	69.4
 Summary:	MIB-Ossigeno icon theme
 # http://kde-look.org/content/show.php/?content=128221
 Source0:	%{oname}-%{oversion}.tar.gz
@@ -24,19 +24,35 @@ MIB-Ossigeno Ultimate Icons theme has been developed by emanueleeeee.
 %build
 
 %install
-%__rm -rf %{buildroot}
-%__mkdir_p %{buildroot}%{_iconsdir}/%{oname}
+mkdir -p %{buildroot}%{_iconsdir}/%{oname}
 
-%__cp -rf ./* %{buildroot}%{_iconsdir}/%{oname}/
+cp -rf ./* %{buildroot}%{_iconsdir}/%{oname}/
 
-%__rm -f %{buildroot}%{_iconsdir}/%{oname}/README
-%__rm -f %{buildroot}%{_iconsdir}/%{oname}/Changelog
-
-%clean
-%__rm -rf %{buildroot}
+rm -f %{buildroot}%{_iconsdir}/%{oname}/README
+rm -f %{buildroot}%{_iconsdir}/%{oname}/Changelog
 
 %files
 %defattr(644,root,root,755)
 %doc README Changelog
 %{_iconsdir}/%{oname}/*
 
+
+%changelog
+* Mon Feb 20 2012 Andrey Bondrov <abondrov@mandriva.org> 4.3.0-69.3
++ Revision: 778079
+- imported package mib-ossigeno-icons
+
+
+* Mon Feb 20 2012 Andrey Bondrov <bondrov@math.dvgu.ru> 4.3.0-69.3mdv2010.2
+- Fix theme icons dir
+- Spec optimization
+- Obsoletes mib-ossigeno-icon-theme
+
+* Thu Mar 17 2011 Cristobal Lopez <lopeztobal@gmail.com> 4.3.0-69.2mib2010.2
+- New release.
+
+* Tue Jan 11 2011 Cristobal Lopez <lopeztobal@gmail.com> 4.2.0-1mib2010.2
+- New release.
+
+* Wed Jan 05 2011 Cristobal Lopez <lopeztobal@gmail.com> 4.1.0-1mib2010.2
+- First release for Mandriva by MIB.
