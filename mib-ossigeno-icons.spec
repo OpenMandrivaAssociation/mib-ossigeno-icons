@@ -3,7 +3,7 @@
 
 Name:		mib-ossigeno-icons
 Version:	4.3.0
-Release:	69.4
+Release:	69.5
 Summary:	MIB-Ossigeno icon theme
 # http://kde-look.org/content/show.php/?content=128221
 Source0:	%{oname}-%{oversion}.tar.gz
