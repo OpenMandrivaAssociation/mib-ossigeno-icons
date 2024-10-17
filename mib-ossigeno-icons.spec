@@ -9,7 +9,7 @@ Summary:	MIB-Ossigeno icon theme
 Source0:	%{oname}-%{oversion}.tar.gz
 License:	LGPL
 Group:		Graphical desktop/KDE
-URL:		http://mib.pianetalinux.org/mib/
+URL:		https://mib.pianetalinux.org/mib/
 BuildArch:	noarch
 Obsoletes:	mib-ossigeno-icon-theme < %{version}
 
